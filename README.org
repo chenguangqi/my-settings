@@ -1,0 +1,7 @@
+这是我的emacs配置文件.
+* 使用说明
+在 =~/.emacs= 文件中添加下面的内容:
+#+BEGIN_SRC lisp
+(add-to-list 'load-path "~/.emacs.d/my-settings")
+(load "~/.emacs.d/my-settings/init.el")
+#+END_SRC 
