@@ -9,6 +9,8 @@
 ;; 安装主题
 (load-theme 'tango-dark)
 
+;; 开启全局yasnippet
+
 ;(add-to-list 'auto-mode-alist  '("\\.emacs\\'" . emacs-lisp-mode))
 
 ;; setting english font

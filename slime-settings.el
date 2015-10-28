@@ -6,6 +6,20 @@
 	    (linum-mode t)
 	    (auto-complete-mode t)))
 
+;shell$ sbcl
+;* (mapc 'require '(sb-bsd-sockets sb-posix sb-introspect sb-cltl2 asdf))
+;* (save-lisp-and-die "sbcl.core-for-slime")
+
+;shell$ sbcl
+;* (load ".../slime/swank-loader.lisp")
+;* (swank-loader:dump-image "sbcl.core-with-swank")
+
+(setq slime-lisp-implementations
+      '((sbcl ("sbcl")
+	      :coding-system utf-8-unix)
+	(ecl ("ecl")
+	     :coding-system utf-8-unix)))
+      
 ;; set hpyerspec root directory
 (require 'hyperspec)
 ;;(setq common-lisp-hyperspec-root "file:/use/share/doc/hyperspec/")

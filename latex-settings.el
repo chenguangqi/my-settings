@@ -1,6 +1,8 @@
 ;; AuCTex and LaTex settings
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+;(autoload "auctex.el" nil t t)
+;(autoload "preview-latex.el" nil t t)
+(load "auctex")
+(load "preview-latex")
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
