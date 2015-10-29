@@ -1,10 +1,10 @@
-(require 'cl)
-(require 'package)
-(add-to-list 'package-archives 
-	     '("marmalage" . "http://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/"))
-(package-initialize)
-
+;; Install Packages Using ELPA, MELPA
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
 
 (provide 'package-settings)
